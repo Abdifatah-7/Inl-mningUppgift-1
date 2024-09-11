@@ -14,7 +14,7 @@ body {
   font-style: normal;
   font-size: 16px;
 }
-
+/* navigation delen */
 #navigation {
   background-color: #33354D;
   padding: 7px;
@@ -124,6 +124,83 @@ input:checked + .slider:before {
   font-size: 2rem;
 }
 
+
+/* Första-sidan */
+
+
+#första-sida{
+  color: #ffff;
+  background-color: #33354D;
+  font-family: Manrope, sans-serif;
+  
+}
+
+ .rubrik{
+  font-size: 56px;
+  font-weight: 800;
+} 
+
+.mobilBild-1{
+  padding-bottom: 50px;
+  transform: translateX(862) translateY(188);
+}
+
+.btn1{
+  background-color:#ffff;
+  width: 180px;
+  height: 52px;
+  color: #33354D;
+  border-radius: 8px;
+  font-size: 12px;
+  margin-top: 48px;
+  margin-right: 24px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  border: none;
+  cursor: pointer;
+
+  
+    .play-icon{
+      width: 26px;
+      height: 29px;
+      position: absolute;
+      left: 20px; 
+    }
+  
+    .text-container {
+      display: flex;
+      flex-direction: column; /* Stapla texten vertikalt  CHATGPT */  
+      margin-left: 25px; /* Skapa avstånd mellan ikonen och texten */
+    }
+  
+    .text-container span {
+      font-size: 19px;
+      font-weight: bold;
+      
+    }
+    .play-Span{
+      margin-left: 20px;
+    }
+    
+    .Apple{
+      padding: 11px 5px;
+    }
+
+    .apple-icon{
+      position: absolute;
+      left: 1rem;
+      top: 10px;
+    }
+}
+
+
+
+
+
+
 /* Tablet - Version */
 @media (max-width: 768px) {
   /* navigation delen */
@@ -151,22 +228,46 @@ input:checked + .slider:before {
 }
 
 
-
 /* Mobil-version */
 @media (max-width:576px){
 
   /* navigation-delen */
-  .container{
-    
-  }
 
   .dark-mode-text{
     display: none;
   }
 
-  .btn-toogle-switch{
-    padding-left: ;
+  /* första-sida */
+
+  .mobilbild-1{
+    display: none;
+  }
+  #huvudled {
+    padding-top: 0 !important; /* Chatgpt*/
+}
+
+  .rubrik{
+    font-size: 34px;
+   text-align: center;
+    
+  }
+
+  .lead{
+    font-size: 18px;
+    padding-top: 3rem;
+    text-align: center;
+  }
+  
+  .btn1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
   }
 
   
+  
+
 }
