@@ -583,6 +583,94 @@ grid-template-columns: 1fr;
 }
 
 
+/* tredje sida */
+
+#slider{
+  .container{
+    background-color: #F3F6FF;
+  }
+  .desktop, .tablet{
+    display: none;
+  }
+
+  .slider-headline{
+    text-align: center;
+    font-size: 22px;
+    padding-top: 3rem;
+  }
+
+  .beskrivning-text{
+    h4{
+      font-size: 24px;
+      font-weight:800 ;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    p{
+      font-size: 16px;
+      text-align: center;
+      color: #585C7B;
+      
+    }
+  }
+
+  #mobil-slider{
+   position: relative;
+
+    .bild-m-slider{
+      display: flex;
+      justify-content: center;
+    }
+
+    .z-mobil-bild{
+      position: absolute;
+      top: 0;
+      left: 35px;
+      
+    }
+  }
+    
+
+
+  @media (min-width:768px){
+
+    .desktop, #mobil-slider{
+      display: none;
+    }
+
+    .container{
+      max-width: 1320px;
+    }
+    .tablet{
+      display: block;
+      position: relative;
+    }
+    .tablet-bild-slider{
+      display: flex;
+      justify-content: center;
+    }
+
+    .z-bild{
+      position: absolute;
+      top: 0;
+      left: 258px;
+    }
+
+    .beskrivning-text{
+      
+      h4, p{
+        padding-inline: 8rem;
+      }
+    
+    }
+
+
+
+  }
+}
+
+
 
 
 
