@@ -7,6 +7,7 @@
   --colar-gray-700: #565973;
   --colar-gray-600: #9397AD;
   --colar-gray-300:#E2E5F1;
+  --colar-gray-100:#F3F6FF;
   --colar-white: #ffff;
 }
 
@@ -181,7 +182,7 @@ header .container{
 
 /* Btn sektion */
 
-#sign-in-btn{
+#sign-in-btn, .btn-primary{
   background-color: var(--colar-primary);
   color: #ffff;
   border-radius: 8px;
@@ -611,6 +612,7 @@ grid-template-columns: 1fr;
       font-size: 16px;
       text-align: center;
       color: #585C7B;
+      padding-bottom: 3.5rem;
       
     }
   }
@@ -668,10 +670,303 @@ grid-template-columns: 1fr;
 
 
   }
+
+
+  @media (min-width:1400px){
+    .container{
+      max-width: 1320px;
+    }
+    .tablet, .mobil-slider{
+      display: none;
+    }
+    .desktop{
+      display: block;
+
+      .desktop-bild-slider{
+        display: flex;
+        justify-content: center;
+        
+      }
+    }
+
+    .beskrivning-text{
+      p{
+        padding-inline: 20rem;
+      }
+    }
+
+  }
 }
 
 
 
 
+/* features 2 (sida 4) */
+
+#features-2{
+  /* Secktion 1 */
+  
+  .container{
+    max-width: 1320px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+  }
+  .managmentInfo{
+    h2{
+      font-size: 1.8rem;
+      font-weight: 800;
+    }
+
+    .featuresList{
+     
+      
+      .feature-item{
+        display: flex;
+        gap: 1rem; 
+        list-style: none;
+        padding-left: 0;
+        padding-bottom: 1rem;
+        
+        img{
+          width: 1.5rem;
+          
+        }
+      }
+    }
+    
+    
+  }
+
+    .btn{
+      margin-top: 3rem;
+    }
+
+    .btn-primary{
+      display: inline; 
+      text-align: center;
+      padding-inline: 2rem;
+
+      .fa-solid{
+        margin-left: 0.5rem;
+      }
+    }
+
+  .features-2-bild1{
+    position: relative;
+
+    .features-2-bild2{
+      position: absolute;
+      bottom: -3.5rem;
+      left: 13rem;
+    }
+  }
 
 
+  
+}
+
+  /* section 2 */
+
+  .features-2{
+    .container{
+      max-width: 1320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "bild-kolumn info"; 
+      gap: 4rem;
+    }
+
+    .bild-kolumn{
+      margin-left: 4rem;
+
+      img{
+        padding-left: 4rem;
+      }
+    }
+
+    .info h2{
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+
+    .paymentInfo{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      .paymentInfo-item{
+       
+        img{
+          display: block;
+          margin-bottom: 2rem;
+          margin-top: 2rem;
+        }
+        span{
+          color: var(--colar-gray-700);
+          
+        }
+      }
+    }
+  }
+
+
+    @media (max-width:768px){
+      #features-2{
+        display: none;
+       
+      }
+    }
+
+
+
+    /* testimonials  (sida 5)*/
+
+    #Testimonials{
+      background-color: var(--colar-gray-100);
+      padding: 5rem 0;
+
+      .container{
+        max-width: 1320px;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "testimonialTitle testimonials";
+      }
+
+      .testimonialTitle{
+        grid-area: testimonialTitle;
+
+        h2{
+          font-size: 2rem;
+          font-weight: 800;
+          color: var(--colar-dark);
+        }
+       
+      }
+
+      .testimonials{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "testimonial testimonial"; 
+        gap: 24px;
+      }
+
+      .testimonial{
+        width: 420px;
+        height: 350px;
+        border-radius: 20px;
+        padding-inline: 1rem;
+        background-color: var(--colar-white);
+        position: relative;
+       
+      }
+
+      .quotes{
+       padding-top: 12px;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        position: absolute;
+        left: 2rem;
+        bottom: 21rem;
+        background-color: var(--colar-primary);
+
+        .fa-quote-left{
+          color: var(--colar-white);
+          font-size: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .rating{
+        padding-top: 48px;
+        padding-left: 1rem;
+      }
+
+      .review{
+        padding: 1rem;
+        text-align: left;
+      }
+
+      .author{
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+
+      }
+    }
+
+      @media(max-width:768px){
+        #Testimonials{
+          display: none;
+        }
+      }
+
+
+      /* FAQ (sida 6) */
+
+      #FAQ{
+
+        .container{
+          display: grid;
+          grid-template-columns: 1fr;
+          padding-top: 1rem;
+        }
+
+
+        .faq-title{
+          text-align: center;
+
+          h2{
+            font-size: 25px;
+            font-weight: 800;
+          }
+
+          p{
+            font-size: 18px;
+            padding-bottom: ;
+          }
+
+        }
+
+          .icon-box{
+            display: none;
+          }
+
+          .accordion{
+            
+            .panel{
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              border: 1px solid var(--colar-gray-300);
+
+              p{
+                padding-left: 1rem;
+                font-weight: 600;
+              }
+
+              .btn-circle{
+                width: 36px;
+                height: 36px;
+                border-radius: 18px;
+                margin-right: 1rem;
+              }
+            }
+            .accordion-text{
+              border: 1px solid var(--colar-gray-300);
+              text-align: center;
+            }
+
+
+          }
+          
+
+
+
+
+      }
+
+    
