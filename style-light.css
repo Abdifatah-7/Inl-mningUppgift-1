@@ -1061,6 +1061,7 @@ grid-template-columns: 1fr;
              
               max-width: 1320px;
               display: grid;
+              gap: 3rem;
               grid-template-columns: 1fr 2fr;
               grid-template-areas: "faq-info accordion-wrapper"
                                   "icon-wrapper accordion-wrapper";                 
@@ -1076,9 +1077,13 @@ grid-template-columns: 1fr;
           }
 
           .icon-wrapper{
-            display: 
-            ;
             grid-area: icon-wrapper;
+
+
+            .icon-box{
+              width: 200px;
+              height: 170px;
+            }
           }
 
 
