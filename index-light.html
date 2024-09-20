@@ -433,28 +433,17 @@
     <div class="container">
 
       <div class="faq-info">
-        <div class="faq-title">
-          <h2>Any questions? <br> Check out the FAQs</h2>
-          <p>Still have unanswered questions and need to get in touch?</p>
-        </div>
-
-        <div class="icon-box">
-          <div class="icon-title">
-            <img src="" alt="mobil telefon icon.">
-            <span>Still have  questions?</span>
-          </div>
-          <a href="#">Contack us <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="faq-title">
+            <h2>Any questions? <br> Check out the FAQs</h2>
+            <p>Still have unanswered questions and need to get in touch?</p>
         </div>
       </div>
 
-
-
-
-
-      <div class="accordion">
+    <div class="accordion-wrapper">
+      <div id="mobil-active-accordion" class="accordion">
         <div class="panel">
           <p>Is any of my personal information stored in the App?</p>
-          <button class="btn-circle"> <i class="fa-solid fa-chevron-up"></i></button>
+          <button class="btn-circle active-btn-circle"> <i class="fa-solid fa-chevron-up"></i></button>
         </div>
 
         <div class="accordion-text">
@@ -478,10 +467,42 @@
       </div>
 
       
-      <div class="accordion">
+      <div id="tablet-active-accordion" class="accordion">
         <div class="panel">
           <p>Is any of my personal information stored in the App?</p>
           <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+
+      
+
+      
+      <div class="accordion">
+        <div class="panel">
+          <p>What formats can I download my transaction history in?</p>
+          <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
+
+
+      <div id="tablet-active-accordion" class="accordion">
+        <div class="panel">
+          <p>Can I schedule future transfers?</p>
+          <button class="btn-circle active-btn-circle"> <i class="fa-solid fa-chevron-up"></i> </button>
+        </div>
+        <div class="accordion-text">
+          <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+        </div>
+
+
+      </div>
+
+
+      
+      <div id="mobil-active-accordion" class="accordion">
+        <div class="panel">
+          <p> Can I schedule future transfers? </p>
+          <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i> </button>
         </div>
       </div>
 
@@ -489,33 +510,47 @@
       
       <div class="accordion">
         <div class="panel">
-          <p>Is any of my personal information stored in the App?</p>
+          <p>When can I use Banking App services?</p>
           <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
         </div>
       </div>
 
+      <div class="accordion">
+        <div class="panel">
+          <p>Can I create my own password that is easy for me to remember? </p>
+          <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
+        </div>
+      </div>
 
       
       <div class="accordion">
         <div class="panel">
-          <p>Is any of my personal information stored in the App?</p>
+          <p>What happens if I forget or lose my password?</p>
           <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
         </div>
       </div>
 
+    </div>
 
-      
-      <div class="accordion">
-        <div class="panel">
-          <p>Is any of my personal information stored in the App?</p>
-          <button class="btn-circle">  <i class="fa-solid fa-chevron-down"></i></button>
-        </div>
+    <div class="icon-wrapper">
+      <div class="icon-box">
+        <img src="./images/Icons/phone-icon.svg" alt="contact">
+        <span>Still have  questions?</span>
+        <a href="#">Contack us <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+
+      <div class="icon-box">
+        <img src="./images/Icons/message-icon.svg" alt="contact">
+        <span>Don't like phone calls?</span>
+        <a id="message-contact" href="#">Contack us <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
 
 
+    </div>
 
-
+    
 
 
 
