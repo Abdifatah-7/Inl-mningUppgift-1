@@ -1060,25 +1060,42 @@ grid-template-columns: 1fr;
           .container{
              
               max-width: 1320px;
+              padding-top: 4rem;
               display: grid;
-              gap: 3rem;
+              column-gap: 7rem;
               grid-template-columns: 1fr 2fr;
               grid-template-areas: "faq-info accordion-wrapper"
                                   "icon-wrapper accordion-wrapper";                 
+
+
           }
+        
 
          
           .faq-info{
             grid-area: faq-info;
+            padding-top: 1rem;
+            
+
+            .faq-title{
+              text-align: left;
+
+              p{
+                padding: 0;
+                
+              }
+            }
           }
 
           .accordion-wrapper{
             grid-area: accordion-wrapper;
+            padding-top: 5rem;
           }
 
           .icon-wrapper{
             grid-area: icon-wrapper;
-
+            padding-top: 0;
+            padding-bottom: 5rem;
 
             .icon-box{
               width: 200px;
