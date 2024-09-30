@@ -16,6 +16,7 @@
 
 *{
   box-sizing: border-box;
+
   -webkit-tap-highlight-color: rgb(0, 0, 0, 0);
 }
 
@@ -523,7 +524,6 @@ grid-template-columns: 1fr;
 
     .feature-text{
       padding:0 ;
-      padding-right: 4rem;
     }
   }
 
@@ -608,9 +608,11 @@ grid-template-columns: 1fr;
 /* tredje sida */
 
 #slider{
-  .container{
-    background-color: #F3F6FF;
+
+  background-color: var(--colar-gray-100); 
+
   }
+
   .desktop, .tablet{
     display: none;
   }
@@ -620,6 +622,8 @@ grid-template-columns: 1fr;
     font-size: 22px;
     padding-top: 3rem;
   }
+
+
 
   .beskrivning-text{
     h4{
@@ -639,17 +643,22 @@ grid-template-columns: 1fr;
   }
 
   #mobil-slider{
+    
    position: relative;
 
     .bild-m-slider{
+      width: 100%;
       display: flex;
       justify-content: center;
     }
 
+     
+
     .z-mobil-bild{
       position: absolute;
-      top: 0;
-      left: 35px;
+      top: 0px;
+      left: 53px;
+      
       
     }
   }
@@ -663,7 +672,7 @@ grid-template-columns: 1fr;
     }
 
     .container{
-      max-width: 1320px;
+      max-width: 720px;
     }
     .tablet{
       display: block;
@@ -677,7 +686,7 @@ grid-template-columns: 1fr;
     .z-bild{
       position: absolute;
       top: 0;
-      left: 258px;
+      left: 242px;
     }
 
     .beskrivning-text{
@@ -694,29 +703,29 @@ grid-template-columns: 1fr;
 
 
   @media (min-width:1400px){
-    .container{
-      max-width: 1320px;
-    }
-    .tablet, .mobil-slider{
-      display: none;
-    }
-    .desktop{
-      display: block;
-
-      .desktop-bild-slider{
-        display: flex;
-        justify-content: center;
+      .container{
+        max-width: 1320px;
         
       }
-    }
-
-    .beskrivning-text{
-      p{
-        padding-inline: 20rem;
+      .tablet, .mobil-slider{
+        display: none;
       }
-    }
+      .desktop{
+        display: block;
 
+        .desktop-bild-slider{
+          display: flex;
+          justify-content: center;
+          
+        }
+      }
+
+      .beskrivning-text{
+        p{
+          padding-inline: 20rem;
+        }
   }
+
 }
 
 
